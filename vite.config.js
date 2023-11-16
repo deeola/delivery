@@ -18,5 +18,7 @@ export default defineConfig({
       
       verbose: true, // Set to true for debugging
     }),
+    
   ],
+  base: '/deeola.github.io'
 });
