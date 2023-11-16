@@ -20,5 +20,5 @@ export default defineConfig({
     }),
     
   ],
-  base: '/deeola.github.io'
+  base: '/'
 });
