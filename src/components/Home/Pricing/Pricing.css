@@ -1,0 +1,143 @@
+.pricing-container {
+  margin: 140px 0px;
+  padding: 0px 0px;
+}
+
+.price-card {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+
+.pricecards {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.7s ease-in;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+/* .pricecards:hover {
+  transform: scale(1.04);
+  background-color: var(--ink);
+} */
+
+
+.price-card:hover {
+  background-color: #fff; /* Change to the desired background color on hover */
+}
+
+.price-card.selected {
+  background-color: #aaf; /* Change to the desired background color for the selected card */
+}
+
+.pricecards:hover p {
+  color: white;
+}
+
+
+.selected {
+  background-color: #aaf; /* Change to the desired background color for the selected card */
+}
+
+.unselect:hover {
+  background-color: rgb(144, 66, 66); /* Change to the desired background color for unselected cards on hover */
+}
+
+
+.planHeading {
+  color: var(--ink);
+  font-family: "Benzin-Regular";
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.planPrice {
+  color: var(--ink);
+  font-family: Benzin-Regular;
+  font-size: 1.7em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.planPara {
+  color: #495564;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin: 20px auto;
+
+}
+
+.arrows{
+    margin: 10px 0px 40px 0px;
+}
+
+.feature-containers{
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+
+}
+
+
+.arrow-check{
+    width: 5%;
+    margin-right: 10px;
+}
+
+.priceCardSignupBtn {
+  padding: 10px 24px;
+  align-items: center;
+  border-radius: 33px;
+  background: #00B795;
+  color: #fff;
+  text-align: center;
+  width: 9.5em;
+  font-size: 1em;
+  align-self: center;
+}
+
+
+@media (max-width: 1024px) {
+
+  .price-card {
+    /* display: none; */
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .pricecards{
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+}
+
+@media (max-width: 764px) {
+
+ 
+
+}
+
+@media (max-width: 840px) {
+
+  .pricecards {
+    /* display: none; */
+  }
+
+}

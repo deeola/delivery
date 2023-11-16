@@ -1,0 +1,158 @@
+/* FAQ.css */
+
+#faq{
+margin-top: 120px;
+background-color: var(--offWhite);
+}
+
+#faqHeading {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--ink);
+}
+
+.faq-cont{
+  display: flex;
+justify-content: space-between;
+}
+
+.faq-header{
+
+}
+
+.faq-container{
+width: 60%;
+}
+
+
+#faqText {
+  font-size: 18px;
+  color: var(--ink);
+  margin-top: 10px;
+  width: 90%;
+}
+
+.faq-container {
+  margin-top: 0px;
+}
+
+.faq-item {
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+.faq-item:hover {
+  background-color: #f5f5f5;
+}
+
+.faq-item.active {
+  background-color: var(--ink);
+  color: var(--white);
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.arrow-icon {
+  color: var(--ink);
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .arrow-icon {
+  transform: rotate(360deg);
+  color: var(--white);
+}
+.faq-item.active .question {
+  color: var(--white);
+}
+.answer {
+  display: none;
+  margin-top: 10px;
+  color: var(--white);
+}
+
+.faq-item.active .answer {
+  display: block;
+}
+#faqHeading {
+  color: #00B795;
+  font-family: "Poppins";
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: 1.995px;
+}
+#faqText {
+  color: var(--ink);
+  font-family: "Benzin-Medium";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+
+@media (max-width: 1024px) {
+
+   
+  #faqText {
+    font-size: 24px;
+  
+  }
+
+  
+  
+}
+
+
+@media (max-width: 764px) {
+
+
+  .faq-cont{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq-header{
+    width: 100%;
+   
+  }
+  
+  .faq-container{
+    width: 100%;
+    }
+
+    #faqText {
+      font-size: 16px;
+      color: var(--ink);
+      margin-top: 10px;
+      width: 100%;
+    }
+
+
+    
+  
+  
+}
+
+
+@media (max-width: 480px) {
+
+  #faqText {
+    font-size: 12px;
+  
+  }
+
+  
+}
