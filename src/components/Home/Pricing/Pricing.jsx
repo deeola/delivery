@@ -1,8 +1,13 @@
+import {useState} from 'react'
 import { useTranslation } from "react-i18next";
 import PricingCard from "./PricingCard";
 import './Pricing.css';
 export default function Pricing() {
   const { t } = useTranslation();
+
+
+  
+
   return (
     <div className="containers">
       <div className="pricing-container">
@@ -12,7 +17,7 @@ export default function Pricing() {
             <h2 className="empower">{t("home.pricing.subheading")}</h2>
           </div>
      
-        <div className="price-card">
+        <div className="price-card-container">
           {t("home.pricing.plans", { returnObjects: true }).map(
             (plan, index) => (
                 <PricingCard
@@ -23,6 +28,7 @@ export default function Pricing() {
                   features={plan.features}
                   index={index}
                   key={index}
+       
                 />
 
             )

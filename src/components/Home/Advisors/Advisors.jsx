@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Available } from "../../../assets/images";
+import { H5, H2, HeadingText } from "../../Shared/Heading";
 import "./Advisors.css";
 
 export function Advisors() {
@@ -10,9 +11,9 @@ export function Advisors() {
         <div className="advisors-container">
           
           <div className="advisorsLeft">
-            <h5 className="advisorsHeading">{t("home.advisors.heading")}</h5>
-            <h2 className="willBe">{t("home.advisors.subheading")}</h2>
-            <p className="advisorPara">{t("home.advisors.paragraph")}</p>
+            <H5 text={t("home.advisors.heading")} />
+            <H2 text={t("home.advisors.subheading")} />
+            <HeadingText text={t("home.advisors.paragraph")} />
           </div>
 
           <div className="advisorsRight">

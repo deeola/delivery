@@ -1,4 +1,6 @@
 import { useTranslation } from "react-i18next";
+import { H2, H5, HeadingText } from "../../Shared/Heading";
+import { Text, TextHeading } from "../../Shared/Heading/Heading";
 import "./HowItWorks.css";
 
 export function HowItWorks() {
@@ -22,9 +24,9 @@ export function HowItWorks() {
     <div className="containers">
       <div className="how-container">
         <div className="howLeft">
-          <h5 className="howHeading">{t("home.howItWorks.heading")}</h5>
-          <h2 className="willBe">{t("home.howItWorks.subheading")}</h2>
-          <p className="howPara">{t("home.howItWorks.content")}</p>
+          <H5 text={t("home.howItWorks.heading")}/>
+          <H2 text={t("home.howItWorks.subheading")} />
+          <HeadingText text={t("home.howItWorks.content")} />
         </div>
 
         <section className="howRight">
@@ -37,8 +39,8 @@ export function HowItWorks() {
                 </div>
 
                 <div className="content">
-                  <h3>{step.title}</h3>
-                  <p>{step.content}</p>
+                  <TextHeading text={step.title} />
+                  <Text text={step.content} />
                 </div>
               </div>
             )

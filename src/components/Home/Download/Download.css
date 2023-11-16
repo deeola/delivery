@@ -136,15 +136,15 @@
 
   }
 
-  .downHeading {
+  /* .downHeading {
 
     font-size: 30px;
     width: 100%;
     margin-bottom: 10px;
     padding-top: 0px;
     text-align: center;
-    /* padding-bottom: 24px; */
-  }
+
+  } */
 
   .downlinks{
     display: flex;

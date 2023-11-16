@@ -327,14 +327,7 @@ body.navbar-open {
 
 
 
-#whyChooseUs {
-  position: relative;
-  /* z-index: 999; */
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  padding: 144px 0;
-}
+
 
 /* #pricing {
   position: relative;
@@ -817,11 +810,11 @@ body.navbar-open {
     height: max-content;
   } */
 
-   #whyChooseUs {
+   /* #whyChooseUs {
     margin-top: -19vh;
     height: auto;
     padding-top: 100px;
-  } 
+  }  */
 
   #advisors {
     /* padding-top: 150px; */

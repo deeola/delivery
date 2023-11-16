@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
 import "./FAQ.css"; // Import the CSS file for styling
+import { H2, H5 } from "../../Shared/Heading";
 
 const FAQ = () => {
   const { t } = useTranslation();
@@ -39,8 +40,8 @@ const FAQ = () => {
     <div className="containers">
       <div className="faq-cont">
         <div className="faq-header">
-          <h4 id="faqHeading">{t("faq.heading")}</h4>
-          <h3 id="faqText">{t("faq.text")}</h3>
+          <H5 text={t("faq.heading")} />
+          <H2 text={t("faq.text")} />
         </div>
           <div className="faq-container">
             {faqData.map((item, index) => (

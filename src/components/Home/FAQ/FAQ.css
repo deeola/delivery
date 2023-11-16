@@ -3,6 +3,7 @@
 #faq{
 margin-top: 120px;
 background-color: var(--offWhite);
+padding: 100px 0px 200px 0px;
 }
 
 #faqHeading {
@@ -118,7 +119,11 @@ width: 60%;
 
 @media (max-width: 764px) {
 
-
+  #faq{
+    margin-top: 60px;
+    background-color: var(--offWhite);
+    padding: 50px 0px 80px 0px;
+    }
   .faq-cont{
     display: flex;
     flex-direction: column;

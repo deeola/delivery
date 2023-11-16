@@ -3,6 +3,7 @@ import "./Footer.css";
 
 import {
   logo,
+  arLogo,
   appStore,
   playStore,
   fb,
@@ -12,7 +13,7 @@ import {
 } from "../../../assets/images";
 
 const Footer = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <footer className="footer-container">
@@ -22,7 +23,7 @@ const Footer = () => {
 
           <div className="logo-container">
             <img
-              src={logo}
+               src={i18n.language === "en" ? logo : arLogo}
               alt="Logo"
               className="logoFooter"
               id="logo-footer"

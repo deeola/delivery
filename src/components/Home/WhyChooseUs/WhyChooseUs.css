@@ -2,6 +2,13 @@
 
 }
 
+#whyChooseUs {
+  padding-top: 100px;
+  padding: 140px 0;
+}
+
+
+
 .whyChooseHeading {
   text-align: center;
   color: #00B795;
@@ -50,16 +57,20 @@
 
 .card-container:hover {
   transform: scale(1.05);
-  background-color: var(--ink);
-  color: wheat;
+  background-color: var(--offWhite);
+  color: var(--ink);
 }
 
 .card-container:hover .cardHeading {
-  color: white;
+  color: ar(--ink);
 }
 
 .card-container:hover .cardPara {
   color: #00B795;
+}
+
+.card-container:hover .imgContainer{
+  background-color: var(--white);
 }
 
 .cardHeading {
@@ -125,10 +136,29 @@
 
   }
 
+  #whyChooseUs {
+    position: relative;
+    /* z-index: 999; */
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    margin-top: -23vh;
+    height: auto;
+    padding-top: 100px;
+    padding: 54px 0;
+  }
+
   
 
   .card-container{
     width: 100%;
+  }
+
+
+  .empower {
+    font-size: 24px;
+    font-style: normal;
+    padding-bottom: 16px;
   }
 
 }

@@ -3,14 +3,45 @@
   padding: 0px 0px;
 }
 
-.price-card {
+/* .price-card {
   display: flex;
   justify-content: space-between;
   width: 90%;
   margin: auto;
+} */
+
+.price-card-container{
+
+  display: flex;
+
 }
 
-.pricecards {
+.price-card{
+
+  width: 30%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.selected{
+  background-color: #233633;
+} 
+
+
+
+.price-card.hovered {
+  background-color: rgb(175, 60, 60);
+  color: black;
+  /* Add other styles as needed */
+}
+
+
+/* .pricecards {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.7s ease-in;
   cursor: pointer;
@@ -20,7 +51,9 @@
   width: 30%;
   border-radius: 10px;
   padding: 50px;
-}
+} */
+
+
 
 /* .pricecards:hover {
   transform: scale(1.04);
@@ -28,26 +61,8 @@
 } */
 
 
-.price-card:hover {
-  background-color: #fff; /* Change to the desired background color on hover */
-}
-
-.price-card.selected {
-  background-color: #aaf; /* Change to the desired background color for the selected card */
-}
-
-.pricecards:hover p {
-  color: white;
-}
 
 
-.selected {
-  background-color: #aaf; /* Change to the desired background color for the selected card */
-}
-
-.unselect:hover {
-  background-color: rgb(144, 66, 66); /* Change to the desired background color for unselected cards on hover */
-}
 
 
 .planHeading {
@@ -71,6 +86,8 @@
   padding: 20px 0px;
 }
 
+
+
 .planPara {
   color: #495564;
   text-align: center;
@@ -83,6 +100,8 @@
 
 }
 
+
+
 .arrows{
     margin: 10px 0px 40px 0px;
 }
@@ -94,6 +113,22 @@
 
 }
 
+.selected .planHeading{
+  color: white;
+}
+
+.selected .planPrice{
+  color: white
+}
+
+.selected .planPara{
+  color: white;
+}
+
+.selected .feat{
+  color: white;
+}
+
 
 .arrow-check{
     width: 5%;
@@ -101,15 +136,16 @@
 }
 
 .priceCardSignupBtn {
-  padding: 10px 24px;
+  padding: 14px 24px;
   align-items: center;
   border-radius: 33px;
   background: #00B795;
   color: #fff;
   text-align: center;
-  width: 9.5em;
+  width: 170px;
   font-size: 1em;
   align-self: center;
+
 }
 
 
@@ -119,6 +155,12 @@
     /* display: none; */
     flex-direction: column;
     width: 100%;
+  }
+
+  .price-card-container{
+
+    flex-direction: column;
+  
   }
 
   .pricecards{

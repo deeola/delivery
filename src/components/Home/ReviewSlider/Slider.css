@@ -30,7 +30,7 @@
   .testimonial{
  
     display: flex;
-    width: 90%;
+    width: 80%;
     justify-content: space-between;
     align-items: center;
 
@@ -39,27 +39,18 @@
   }
   
   .review-card {
-      /* position: absolute; */
-    /* top: 50%;
-    left: 50%; */
-    /* transform: translate(-50%, -50%); */
-   
+ 
     padding: 40px 20px;
     background-color: #fff;
-    box-shadow: rgba(237, 235, 237, 0.4) 0px 25px, rgba(245, 234, 245, 0.492) 0px 45px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px, rgba(225, 225, 225, 0.639) 0px 20px, rgba(235, 235, 235, 0.492) 0px 40px;
     border-radius: 8px;
     text-align: center;
     transition: transform 0.3s ease-in-out; 
-    width: 90%;
-    /* height: 250px; */
+    width: 60%;
+   
   }
 
-  
 
-/* 
-  .testimonial:not(:first-child) {
-    margin-top: -40px; 
-  } */
   
 
   .review-name-picture{
@@ -80,6 +71,7 @@
 
   .r-content{
     text-align:left;
+    font-size: 16px;
   }
 
   .review-details-stars{

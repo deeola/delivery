@@ -6,7 +6,24 @@ import "./ReviewSlider.css";
 import { prevArrow, nextArrow, mTahir, stars } from "../../../assets/images";
 
 const Slider = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  console.log(i18n.language)
+
+  // styling for arabic
+
+  const styles = {
+    marginLeft: "30px"
+  }
+
+  const rowReverse = {
+  
+   
+    display: 'flex',
+    flexDirection: "row-reverse",
+    transform: "scaleX(-1)"
+    
+   }
 
   const reviews = [
     {
@@ -52,7 +69,7 @@ const Slider = () => {
   return (
     <div className="slider-container">
       <div className="testimonial">
-        <button className="slider-button" onClick={handlePrev}>
+        <button style={i18n.language === 'ar' ? rowReverse : {}} className="slider-button" onClick={handlePrev}>
           <img
             src={prevArrow}
             alt={t("reviewSlider.previousArrow")}
@@ -62,7 +79,7 @@ const Slider = () => {
         <div className="review-card">
             <div className="review-details-stars">
             <div className="review-name-picture">
-            <img className="r-img" src={reviews[currentIndex].img} alt="img" />
+            <img className="r-img" src={reviews[currentIndex].img} style={i18n.language === 'ar' ? styles : {}} alt="img" />
             <div className="r-name">{reviews[currentIndex].title}</div>
           </div>
           <div>
@@ -73,8 +90,8 @@ const Slider = () => {
           
           <p className="r-content">{reviews[currentIndex].content}</p>
         </div>
-        <button className="slider-button" onClick={handleNext}>
-          <img src={nextArrow} alt={t("reviewSlider.nextArrow")} />
+        <button style={i18n.language === 'ar' ? rowReverse : {}} className="slider-button" onClick={handleNext}>
+          <img  src={nextArrow} alt={t("reviewSlider.nextArrow")} />
         </button>
       </div>
 

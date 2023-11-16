@@ -15,7 +15,7 @@ export function Hero() {
             <h1 className="heroH1">{t("home.hero.heading-b")}</h1>
             <p className="heroPara">{t("home.hero.content")}</p>
 
-            <div className="heroDownloadLinks">
+            <div className="heroDownloadLinks" >
               <div className="imageContainer">
                 <img  src={GooglePlay} alt="Google Play" className="imageLeft" />
                 <img src={AppStore} alt="App Store" className="imageLeft" />
