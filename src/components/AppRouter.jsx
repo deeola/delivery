@@ -1,5 +1,5 @@
 
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, HashRouter as Router } from "react-router-dom";
 
 import Home from "./Home";
 import About from "./About";
@@ -10,7 +10,7 @@ import Navbar from "./Shared/Navbar";
 
 const AppRouter = () => {
   return (
-    <BrowserRouter>
+    <Router>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -21,7 +21,7 @@ const AppRouter = () => {
         <Route path="/login" element={<Home />} />
         <Route path="/signup" element={<Home />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 };
 

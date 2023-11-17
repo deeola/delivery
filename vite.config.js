@@ -5,6 +5,8 @@ import copy from "rollup-plugin-copy";
 
 
 export default defineConfig({
+
+  base: '/delivery/',
   plugins: [
     react(),
 
@@ -19,6 +21,6 @@ export default defineConfig({
       verbose: true, // Set to true for debugging
     }),
     
-  ],
-  base: '/delivery/'
+  ]
+  
 });
