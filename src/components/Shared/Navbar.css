@@ -123,7 +123,6 @@
     flex-direction: column;
     padding: 120px 100px 120px 100px; 
     display: none;
-    border: 1px solid seagreen;
   }
 
   .hamburger {
