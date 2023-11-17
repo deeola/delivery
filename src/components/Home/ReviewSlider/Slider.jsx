@@ -17,10 +17,7 @@ const Slider = () => {
   }
 
   const rowReverse = {
-  
-   
-    display: 'flex',
-    flexDirection: "row-reverse",
+
     transform: "scaleX(-1)"
     
    }

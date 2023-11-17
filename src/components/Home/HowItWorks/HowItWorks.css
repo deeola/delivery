@@ -1,8 +1,12 @@
 
 .how-container {
-  display: flex;
-  justify-content: space-between;
-  margin: 120px 0px;
+  /* display: flex;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 140px 0px;
+  /* m: 120px 0px; */
 
 }
 
@@ -10,11 +14,11 @@
 
 .howLeft {
   padding-top: 50px;
-  width: 42%;
+   width: 90%; 
 }
 
 .howRight{
-    width: 50%;
+    /* width: 50%; */
 }
 
 
@@ -89,7 +93,10 @@
   @media (max-width: 1024px) {
 
    
-   
+    .howLeft {
+      padding-top: 0px;
+
+    }
     
   
   }
@@ -98,14 +105,14 @@
   @media (max-width: 768px) {
 
     .how-container {
-      flex-direction: column;
+      grid-template-columns: repeat(1, 1fr);
   
      
      }
 
      .howLeft {
-      padding-top: 50px;
       width: 100%;
+      padding-top: 0px;
     }
     
     .howRight{

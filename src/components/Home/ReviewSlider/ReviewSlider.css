@@ -1,12 +1,15 @@
 .review-container{
-  padding-top: 150px;
 }
 
 @media (max-width: 764px) {
   .review-container{
     padding-top: unset;
+    
   }
   
+  .slider-button{
+    display: none;
+  }
   
 
   

@@ -13,7 +13,6 @@ export function WhyChooseUs() {
           <div className="whychooseus-header">
             <H5 centered text={t("home.whyChoose.heading")} />
             <H2 centered text={t("home.whyChoose.subheading")}/>
-            {/* <h2 className="empower">{t("home.whyChoose.subheading")}</h2> */}
           </div>
 
           <div className="whychooseus-cards">

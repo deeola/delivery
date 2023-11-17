@@ -45,8 +45,19 @@ const Navbar = () => {
   };
 
   const hamStyles  = {
-    marginLeft: 'auto'
+    width: '100%',
+    direction: 'ltr'
+    
   }
+
+
+  const hamStylesEn  = {
+    width: '100%',
+    direction: 'rtl'
+  
+  }
+
+
 
   
 
@@ -72,7 +83,7 @@ const Navbar = () => {
               </Link>
             </div>
 
-            <div className="hamburger" style={ menuOpen ? hamStyles : {}}>
+            <div className="hamburger" style={ i18n.language === 'ar' ? hamStyles : hamStylesEn}>
               <div>
                 {menuOpen ? (
                   <img src={close} alt="close" onClick={toggleMenu} />

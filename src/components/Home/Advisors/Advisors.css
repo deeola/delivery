@@ -1,24 +1,29 @@
 .advisors-container {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
 .advisorsLeft {
-  width: 37%;
+
+  width: 90%; 
   display: flex;
   flex-direction: column;
 
   /* justify-content: center; */
  
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .advisorsRight {
-  width: 50%;
+  /* width: 100%; */
   
 }
 
-.advisorsHeading {
+/* .advisorsHeading {
   color: #00B795;
   font-family: Poppins;
   font-size: 21px;
@@ -39,16 +44,16 @@
   text-transform: capitalize;
 
   margin: 20px 0px;
-}
+} */
 
-.advisorPara {
+/* .advisorPara {
   color: #495564;
   font-family: 'Poppins';
   font-size: 19px;
   font-style: normal;
   font-weight: 400;
   padding-bottom: 40px;
-}
+} */
 
 .advisorImage {
   width: 100%;
@@ -62,7 +67,7 @@
   }
 
   .advisorsLeft {
-    width: 45%;
+    width: 100%;
     
 
   }
@@ -75,7 +80,7 @@
   }
 
   .advisorsRight {
-    width: 45%;
+    width: 100%;
   }
 
   .advisorImage {
@@ -87,17 +92,15 @@
 
 @media (max-width: 768px) {
   .advisors-container{
-    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
   
  
 
   }
 
   .advisorsLeft{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   
+    padding-top: 0px;
   }
 
   .advisorsRight {

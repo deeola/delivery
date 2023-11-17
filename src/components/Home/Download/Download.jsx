@@ -14,8 +14,8 @@ const { t } = useTranslation();
     <div className="containers" id="download">
     <div className="download-container">
       <div className="downLeft">
-        <H2 text={t("home.download.heading")} download />
-        {/* <h2 className="downHeading">{t("home.download.heading")}</h2> */}
+        {/* <H2 text={t("home.download.heading")} download /> */}
+        <h2 className="downHeading">{t("home.download.heading")}</h2>
         <div className="imageContainer-2 downlinks">
           <img src={GooglePlay} alt="Google Play" className="imageLeft downimage" />
           <img src={AppStore} alt="App Store" className="imageLeft downimage" />

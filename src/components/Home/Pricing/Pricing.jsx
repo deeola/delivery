@@ -1,7 +1,7 @@
-import {useState} from 'react'
 import { useTranslation } from "react-i18next";
 import PricingCard from "./PricingCard";
 import './Pricing.css';
+import { H2, H5 } from '../../Shared/Heading';
 export default function Pricing() {
   const { t } = useTranslation();
 
@@ -13,8 +13,8 @@ export default function Pricing() {
       <div className="pricing-container">
   
           <div className="pricing-header">
-            <h5 className="whyChooseHeading">{t("home.pricing.heading")}</h5>
-            <h2 className="empower">{t("home.pricing.subheading")}</h2>
+            <H5 centered text={t("home.pricing.heading")} />
+            <H2  centered text={t("home.pricing.subheading")}/>
           </div>
      
         <div className="price-card-container">

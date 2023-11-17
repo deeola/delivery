@@ -1,24 +1,16 @@
 .pricing-container {
-  margin: 140px 0px;
-  padding: 0px 0px;
-}
-
-/* .price-card {
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
+  padding: 140px 0px;
+  width: 80%;
   margin: auto;
-} */
-
-.price-card-container{
-
-  display: flex;
-
 }
 
-.price-card{
+.price-card-container {
+  display: flex;
+  margin-top: 40px;
+}
 
-  width: 30%;
+.price-card {
+  width: 32%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   padding: 30px;
@@ -26,42 +18,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: var(--white);
 }
 
-.selected{
-  background-color: #233633;
-} 
-
-
-
-.price-card.hovered {
-  background-color: rgb(175, 60, 60);
-  color: black;
-  /* Add other styles as needed */
-}
-
-
-/* .pricecards {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.7s ease-in;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30%;
-  border-radius: 10px;
-  padding: 50px;
-} */
-
-
-
-/* .pricecards:hover {
-  transform: scale(1.04);
+.selected {
   background-color: var(--ink);
-} */
-
-
-
+}
 
 
 
@@ -86,8 +48,6 @@
   padding: 20px 0px;
 }
 
-
-
 .planPara {
   color: #495564;
   text-align: center;
@@ -97,89 +57,95 @@
   font-weight: 400;
   line-height: 160%;
   margin: 20px auto;
-
 }
 
-
-
-.arrows{
-    margin: 10px 0px 40px 0px;
+.arrows {
+  margin: 10px 0px 40px 0px;
 }
 
-.feature-containers{
-    display: flex;
-    align-items: center;
-    margin: 20px 0px;
-
+.feature-containers {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
 }
 
-.selected .planHeading{
+.selected .planHeading {
   color: white;
 }
 
-.selected .planPrice{
-  color: white
-}
-
-.selected .planPara{
+.selected .planPrice {
   color: white;
 }
 
-.selected .feat{
+.selected .planPara {
   color: white;
 }
 
+.selected .feat {
+  color: white;
+}
 
-.arrow-check{
-    width: 5%;
-    margin-right: 10px;
+.arrow-check {
+  width: 5%;
+  margin-right: 10px;
 }
 
 .priceCardSignupBtn {
   padding: 14px 24px;
   align-items: center;
   border-radius: 33px;
-  background: #00B795;
+  background: #00b795;
   color: #fff;
   text-align: center;
   width: 170px;
   font-size: 1em;
   align-self: center;
-
 }
 
+.box {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.white {
+  background-color: white;
+}
+
+.black {
+  background-color: black;
+}
 
 @media (max-width: 1024px) {
-
   .price-card {
     /* display: none; */
     flex-direction: column;
     width: 100%;
+    margin-bottom: 30px;
   }
 
-  .price-card-container{
+  .pricing-container {
+    padding: 80px 0px;
 
-    flex-direction: column;
+  }
   
+
+  .price-card-container {
+    flex-direction: column;
   }
 
-  .pricecards{
+  .pricecards {
     width: 100%;
     margin-bottom: 50px;
   }
-
 }
 
 @media (max-width: 764px) {
-
- 
-
 }
 
 @media (max-width: 840px) {
-
   .pricecards {
     /* display: none; */
   }
-
 }

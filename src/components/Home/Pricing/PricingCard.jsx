@@ -3,20 +3,16 @@ import { DarkArrow } from "../../../assets/images";
 import PropTypes from "prop-types";
 import "./Pricing.css";
 
-const PricingCard = ({  title, price, content, features, button }) => {
+const PricingCard = ({ index, title, price, content, features, button }) => {
  
+  const [hoveredDiv, setHoveredDiv] = useState(1);
 
-
- 
-
+  console.log(index)
 
 
   return (
     <div
-   
-    className='price-card'
-
-    
+    className={`price-card ${hoveredDiv === index ? 'selected' : ''}`}
     >
       <div className="priceandcontent">
         <h4 className="planHeading">{title}</h4>
