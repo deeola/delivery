@@ -1,5 +1,5 @@
 
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes, HashRouter as Router } from "react-router-dom";
 
 import Home from "./Home";
 import About from "./About";
@@ -10,7 +10,7 @@ import Navbar from "./Shared/Navbar";
 
 const AppRouter = () => {
   return (
-    <BrowserRouter>
+    <Router>
     <div className="cont-ainer">
     <Navbar />
       <Routes>
@@ -24,7 +24,7 @@ const AppRouter = () => {
       </Routes>
     </div>
      
-    </BrowserRouter>
+    </Router>
   );
 };
 
