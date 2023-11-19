@@ -1,13 +1,27 @@
-.navbar {
+ 
+ body{
+  /* position: relative; */
+ }
+
+
+ .navbar {
   background-color: var(--ink);
   font-family: var(--Poppins);
+  position: fixed !important;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  padding: 35px 0px !important; 
+  
 }
+
+
 
 .navbar-container {
   display: flex;
   justify-content: space-between;
-  padding: 50px 0px 100px 0px;
-}
+  /* padding: 50px 0px 100px 0px; */
+} 
 
 .navright {
   display: flex;
@@ -88,6 +102,7 @@
 @media (max-width: 1024px) {
   .navbar {
     position: relative;
+    padding: unset !important;
   }
 
   .navbar-container{
@@ -129,10 +144,9 @@
     display: block;
     justify-content: center;
     align-items: center;
-    /* background-color: aliceblue;
     width: 100%;
     position: relative;
-    left: 0; */
+    left: 0;
   }
 
   .desktop-language {
@@ -168,7 +182,7 @@
   }
 
   .auths {
-    width: 100%;
+    width: 30%;
     font-weight: 400;
     margin-left: unset;
     margin-top: 20px;
@@ -190,15 +204,40 @@
 
 /*Media queries for mobile*/
 @media (max-width: 768px) {
+
+  .navbar{
+    padding: 0px 0px !important; 
+    /* border: 10px solid gray; */
+  }
+
   .navbar-container {
     display: flex;
     justify-content: space-between;
-    /* padding: 50px 0px 20px 0px; */
+    padding: 0px 0px 0px 0px; 
+
   }
+
+  .navright{
+    background-color: var(--ink);
+  }
+
+  .auths{
+    width: 100%;
+  }
+
 }
 
 /*Media queries for mobile*/
 @media (max-width: 480px) {
+
+  .logo {
+    width: 80%;
+    /* background-color: aliceblue; */
+  }
+
+  .logo-link-image{
+    width: 100%;
+  }
 
   .navleft {
     height: 100vh;

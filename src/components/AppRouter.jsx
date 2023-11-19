@@ -1,5 +1,5 @@
 
-import {  Route, Routes, HashRouter as Router } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Home from "./Home";
 import About from "./About";
@@ -10,8 +10,9 @@ import Navbar from "./Shared/Navbar";
 
 const AppRouter = () => {
   return (
-    <Router>
-      <Navbar />
+    <BrowserRouter>
+    <div className="cont-ainer">
+    <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
@@ -21,7 +22,9 @@ const AppRouter = () => {
         <Route path="/login" element={<Home />} />
         <Route path="/signup" element={<Home />} />
       </Routes>
-    </Router>
+    </div>
+     
+    </BrowserRouter>
   );
 };
 

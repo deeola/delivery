@@ -32,53 +32,49 @@ const Footer = () => {
 
 
           <div className="socials-container">
-            <div className="row">
-              <div className="col-sm-6 ">
-                <div className="tag">{t("footer.socials")}</div>
-              </div>
+           
+         
+                <div className="footer-social-text">{t("footer.socials")}</div>
+             
 
-              <div className="col-sm-6 m-0 p-0">
+              <div className="social-icon-main-container">
                 <div className="social-icons">
-                  <a href="https://www.facebook.com" className="social-icon">
-                    <img src={fb} alt="facebook icon" />
+                  <a href="https://www.facebook.com" className="social-icon-link" >
+                    <img src={fb} alt="facebook icon" className="social-icon"/>
                   </a>
-                  <a href="https://www.twitter.com" className="social-icon">
-                    <img src={Twitter} alt="twitter icon" />
+                  <a href="https://www.twitter.com" className="social-icon-link"  >
+                    <img src={Twitter} alt="twitter icon"  className="social-icon"/>
                   </a>
-                  <a href="https://www.linkedin.com" className="social-icon">
-                    <img src={Linkedin} alt="linkedin" />
+                  <a href="https://www.linkedin.com"  className="social-icon-link" >
+                    <img src={Linkedin} alt="linkedin" className="social-icon" />
                   </a>
-                  <a href="https://www.instagram.com" className="social-icon">
-                    <img src={Instagram} alt="instagram" />
+                  <a href="https://www.instagram.com" className="social-icon-link"  >
+                    <img src={Instagram} alt="instagram" className="social-icon"/>
                   </a>
                 </div>
               </div>
 
-            </div>
+    
           </div>
 
-
-
-          <div className="">
-            <div className="row">
-              <div className="col-sm-6 m-0 p-0 app-store">
-                <img
+          <div className="bottomIcons">
+           
+              <div className="play-store">
+              <img
                   src={appStore}
                   alt="appstore icon"
                   className="store-icon"
                 />
-              </div>
-              <div className="col-sm-6 m-0 p-0 play-store">
-                <div id="play-store">
                   <img
                     src={playStore}
                     alt="playstore icon"
                     className="store-icon"
                   />
-                </div>
               </div>
-            </div>
+
+      
           </div>
+
           <hr className="divider" />
         </div>
 

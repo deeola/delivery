@@ -24,6 +24,8 @@ const Navbar = () => {
       return i18n.changeLanguage("ar");
     } else {
       document.documentElement.setAttribute("dir", "ltr");
+  
+     
       return i18n.changeLanguage("en");
     }
   };
@@ -35,7 +37,7 @@ const Navbar = () => {
     const logoRefElement = logoRef.current
   
     if (!menuOpen) {
-      console.log(navLeftElement)
+
       navLeftElement.style.display = 'flex';
       logoRefElement .style.display = 'none';
     } else {
@@ -57,6 +59,12 @@ const Navbar = () => {
   
   }
 
+  const arFont = {
+    fontFamily : 'Cairo, sans-serif !important'
+  }
+
+
+
 
 
   
@@ -64,7 +72,81 @@ const Navbar = () => {
 
 
   return (
-    <nav className="navbar">
+    <nav className="navbar testing" style={ i18n.language === 'ar' ? arFont : {}}>
+      <div className="containers">
+        <section
+          className={`navbar-container ${language} ${
+            menuOpen ? "menu-open" : ""
+          }`}
+        >
+          <div className="navright">
+
+            <div ref={logoRef} className="logo">
+              <Link className="logo-link" to="/">
+                <img
+                  className="logo-link-image"
+                  src={language === "ltr" ? logo : arLogo}
+                  alt="logo"
+                />
+              </Link>
+            </div>
+
+            <div className="hamburger" style={ i18n.language === 'ar' ? hamStyles : hamStylesEn}>
+              <div>
+                {menuOpen ? (
+                  <img src={close} alt="close" onClick={toggleMenu} />
+                ) : (
+                  <img src={open} alt="open" onClick={toggleMenu} />
+                )}
+              </div>
+            </div>
+
+            <div className="language desktop-language navbar-open" onClick={toggleLanguage} style={i18n.language === 'ar' ? arFont :{}}>
+              {t("navbar.arabic")}
+            </div>
+          </div>
+          <div className="navleft" ref={navLeftRef}>
+          <div className="navlinks navbar-open">
+            <NavLink to="/" linkText="navbar.home" />
+            <NavLink to="/services" linkText="navbar.services" />
+            <NavLink to="#download" linkText="navbar.download" />
+            <NavLink to="/about" linkText="navbar.about" />
+            <NavLink to="/contact" linkText="navbar.contact" />
+          </div>
+
+          <div className="langaue mobile-language" onClick={toggleLanguage} style={i18n.language === 'ar' ? arFont :{}}>
+              {t("navbar.arabic")}
+          </div>
+
+          <div className={`auth navbar-open ${language}`}>
+        
+            <Link className="auths login" to="/login" style={i18n.language === 'ar' ? arFont :{}}>
+              {t("navbar.login")}
+            </Link>
+       
+       
+            <Link className=" auths signup" to="/signup" style={i18n.language === 'ar' ? arFont :{}}>
+              {t("navbar.signup")}
+            </Link>
+      
+            
+            
+          </div>
+          </div>
+
+         
+
+        </section>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
+
+
+
+{/* <nav className="navbar">
       <div className="containers">
         <section
           className={`navbar-container ${language} ${
@@ -130,8 +212,4 @@ const Navbar = () => {
 
         </section>
       </div>
-    </nav>
-  );
-};
-
-export default Navbar;
+    </nav> */}

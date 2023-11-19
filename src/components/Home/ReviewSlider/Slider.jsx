@@ -8,7 +8,6 @@ import { prevArrow, nextArrow, mTahir, stars } from "../../../assets/images";
 const Slider = () => {
   const { t, i18n } = useTranslation();
 
-  console.log(i18n.language)
 
   // styling for arabic
 

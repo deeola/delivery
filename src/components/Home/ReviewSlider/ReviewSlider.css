@@ -1,7 +1,7 @@
 .review-container{
 }
 
-@media (max-width: 764px) {
+@media (max-width: 768px) {
   .review-container{
     padding-top: unset;
     

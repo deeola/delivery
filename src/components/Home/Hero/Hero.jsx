@@ -3,7 +3,17 @@ import { GooglePlay, iPhone, AppStore } from "../../../assets/images";
 import "./Hero.css";
 
 export function Hero() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const arFont = {
+    fontFamily: 'Cairo'
+  }
+
+  const arFontFamily ={
+    fontFamily: 'Cairo',
+    fontSize: '64px',
+    fontWeight: '700'   
+  }
 
   return (
     <header className="hero">
@@ -11,9 +21,9 @@ export function Hero() {
         <div className="hero-container">
           
           <div className="hero-left">
-            <h1 className="heroH1">{t("home.hero.heading")}</h1>
-            <h1 className="heroH1">{t("home.hero.heading-b")}</h1>
-            <p className="heroPara">{t("home.hero.content")}</p>
+            <h1 className="heroH1" style={i18n.language === 'ar' ? arFontFamily : {}}>{t("home.hero.heading")}</h1>
+            <h1 className="heroH1" style={i18n.language === 'ar' ? arFontFamily : {}}>{t("home.hero.heading-b")}</h1>
+            <p className="heroPara" style={i18n.language === 'ar' ? arFont : {}}>{t("home.hero.content")}</p>
 
             <div className="heroDownloadLinks" >
               <div className="imageContainer">

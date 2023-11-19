@@ -9,43 +9,51 @@
 .logo-container {
   display: flex;
   justify-content: center;
+
   margin-bottom: 20px;
 }
 
 .logo {
-  width: 100px;
-  height: auto;
+  /* width: 100px;
+  height: auto; */
 }
 
 .socials-container {
   margin-bottom: 20px;
-  text-align: center;
+  /* text-align: center; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.tag {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  text-align: end;
-  padding-top: 10px;
-  color: #fff;
-  font-family: Poppins;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+.social-icon-main-container{
+  width: 15%;
+  margin: 10px 0px;
 }
+
+.social-icon-link{
+  margin-left: 20px;
+  width: 100%;
+}
+
+.tag{
+
+}
+
 
 .social-icons {
   display: flex;
-  justify-content: flex-start;
+  /* justify-content: center; */
+
 }
 
 .social-icon {
-  margin: 0 5px;
+  /* margin: 0 5px;
   font-size: 24px;
   padding-right: 4px;
-  padding-left: 4px;
+  padding-left: 4px; */
+  width: 100%;
 }
 
 .stores-container {
@@ -54,10 +62,20 @@
   margin-bottom: 40px;
 }
 
+.play-store{
+  display: flex;
+  justify-content: space-between;
+
+  width: 25%;
+  margin: 0px auto;
+}
+
+
 .store-icon {
-  width: 200px;
+  /* width: 200px;
   height: auto;
-  margin: 0 10px;
+  margin: 0 10px; */
+
 }
 
 .divider {
@@ -103,11 +121,20 @@
 .right-text a:hover {
   text-decoration: underline;
 }
-.logoFooter {
-  padding-left: 80px;
+
+
+@media(max-width: 1024px){
+  .social-icon-main-container{
+    width: 25%;
+  }
+
+  .play-store{
+
+  
+    width: 40%;
+    margin: 0px auto;
+  }
 }
-
-
 
 
 
@@ -145,10 +172,15 @@
  
   }
 
-  #play-store{
+  /* #play-store{
     margin-top: 20px;
-  }
+  } */
   
+
+  .play-store{
+
+  width: 60%;
+  }
   
   
 }
@@ -156,6 +188,44 @@
 @media (max-width: 480px) {
 
    
+  .play-store{
+
+    flex-direction: column;
+    width: 50%;
+  }
+
+
+  .store-icon{
+    margin-bottom: 20px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: unset;
+
+
+  
+  }
+  .social-icon {
+
+
+  
+  
+  }
+
+  .social-icon-main-container{
+    width: 70%;
+  }
+
+  .socials-container{
+    flex-direction: column;
+    width: 100%;
+
+  }
+
+  .social-icon-link{
+    width: 100%;
+  }
   
   
   

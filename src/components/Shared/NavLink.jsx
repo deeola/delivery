@@ -1,19 +1,21 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
 import { useTranslation } from "react-i18next";
 
 
-const NavLink = ({to, linkText, linkClass}) => {
-    const { t } = useTranslation();
-    const location = useLocation();
+const NavLink = ({to, linkText}) => {
+    const { t, i18n } = useTranslation();
 
-
+    const arFont = {
+      fontFamily : 'Cairo, sans-serif !important'
+    }
 
   return (
    
       <Link
         to={to}
         className={'navigation-links'}
+        style={i18n.language === 'ar' ? arFont :{}}
       >
      {t(linkText)}
       </Link>
