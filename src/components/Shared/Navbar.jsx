@@ -60,8 +60,10 @@ const Navbar = () => {
   }
 
   const arFont = {
-    fontFamily : 'Cairo, sans-serif !important'
+    fontFamily : 'Cairo'
   }
+
+  
 
 
 

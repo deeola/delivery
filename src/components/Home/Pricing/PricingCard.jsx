@@ -1,23 +1,28 @@
-import { useState, useRef } from "react";
+import { useState} from "react";
 import { DarkArrow } from "../../../assets/images";
 import PropTypes from "prop-types";
 import "./Pricing.css";
+import { useTranslation } from "react-i18next";
 
 const PricingCard = ({ index, title, price, content, features, button }) => {
+  const { t, i18n } = useTranslation();
  
   const [hoveredDiv, setHoveredDiv] = useState(1);
 
-  console.log(index)
+  const arFont={
+    fontFamily: 'Cairo'
+}
 
 
   return (
     <div
     className={`price-card ${hoveredDiv === index ? 'selected' : ''}`}
+    style={i18n.language === 'ar' ? arFont : {}}
     >
       <div className="priceandcontent">
-        <h4 className="planHeading">{title}</h4>
-        <h2 className="planPrice">{price}</h2>
-        <p className="planPara">{content}</p>
+        <h4 className="planHeading" style={i18n.language === 'ar' ? arFont : {}}>{title}</h4>
+        <h2 className="planPrice" style={i18n.language === 'ar' ? arFont : {}}> {price}</h2>
+        <p className="planPara" style={i18n.language === 'ar' ? arFont : {}}>{content}</p>
       </div>
       <div className="arrows">
         {features.map((feature, featureIndex) => (

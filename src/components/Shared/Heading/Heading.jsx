@@ -7,6 +7,16 @@ const arFont={
     fontFamily: 'Cairo'
 }
 
+const arH2 = {
+    fontFamily: 'Cairo',
+    fontWeight: '700'
+}
+
+const arTextHeading = {
+    fontFamily: 'Cairo',
+    fontWeight: '500'
+}
+
 export const H5 = ({text, centered}) => {
     
 
@@ -20,7 +30,7 @@ export const H5 = ({text, centered}) => {
 export const H2 = ({text, centered, download}) => {
     const {i18n} = useTranslation()
     return (
-        <h2 className={`heading-two ${centered ? 'centered' : ''} ${download ? 'download' : ''}`}  style={i18n.language === 'ar' ? arFont : {}}>{text}</h2>
+        <h2 className={`heading-two ${centered ? 'centered' : ''} ${download ? 'download' : ''}`}  style={i18n.language === 'ar' ? arH2 : {}}>{text}</h2>
     )
 }
 
@@ -43,6 +53,6 @@ export const Text = ({text, centered}) => {
 export const TextHeading = ({text, centered}) => {
     const {i18n} = useTranslation()
     return (
-        <h4 className={`text-heading ${centered ? 'centered' : ''}`} style={i18n.language === 'ar' ? arFont : {}}>{text}</h4>
+        <h4 className={`text-heading ${centered ? 'centered' : ''}`} style={i18n.language === 'ar' ? arTextHeading  : {}}>{text}</h4>
     )
 }

@@ -2,7 +2,7 @@
 
 #faq{
 margin-top: 140px;
-background-color: var(--offWhite);
+background-color: var(--White);
 padding: 100px 0px 200px 0px;
 }
 
@@ -38,10 +38,10 @@ width: 60%;
 }
 
 .faq-item {
-  background-color: var(--white);
+  background-color: var(--offWhite);
   border-radius: 8px;
   padding: 16px;
-  margin-bottom: 8px;
+  margin-bottom: 30px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   position: relative;

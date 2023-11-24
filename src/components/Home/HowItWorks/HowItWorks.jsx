@@ -2,23 +2,16 @@ import { useTranslation } from "react-i18next";
 import { H2, H5, HeadingText } from "../../Shared/Heading";
 import { Text, TextHeading } from "../../Shared/Heading/Heading";
 import "./HowItWorks.css";
+import HowItWorksCards from "./HowItWorksCards";
 
 export function HowItWorks() {
   const { t, i18n } = useTranslation();
 
-  console.log(i18n.language)
+
 
   // styling for arabic
 
-  const styles = {
-    flexDirection: "unset",
-    marginLeft: "30px"
-  }
-
-  const numberLine = {
   
-    marginTop: "70px"
-  }
   
   return (
     <div className="containers">
@@ -30,21 +23,10 @@ export function HowItWorks() {
         </div>
 
         <section className="howRight">
-          {t("home.howItWorks.steps", { returnObjects: true }).map(
-            (step, index) => (
-              <div className="how-right-container" key={index}>
-                <div className="numbered-point" style={i18n.language === 'ar' ? styles : {}}>
-                  <div className="numbered-circle" >{index + 1}</div>
-                  {index !== 2 && <div className="numbered-line" style={i18n.language === 'ar' ? numberLine : {}}></div>}
-                </div>
-
-                <div className="content">
-                  <TextHeading text={step.title} />
-                  <Text text={step.content} />
-                </div>
-              </div>
-            )
-          )}
+          <HowItWorksCards numberLines={t("home.howItWorks.steps1.number")} number={1} text={t("home.howItWorks.steps1.content")} textheading={t("home.howItWorks.steps1.title")} />
+          <HowItWorksCards numberLines={t("home.howItWorks.steps2.number")}  number={2} text={t("home.howItWorks.steps2.content")} textheading={t("home.howItWorks.steps2.title")}/>
+          <HowItWorksCards  numberLines={t("home.howItWorks.steps3.number")}  number={3} text={t("home.howItWorks.steps3.content")} textheading={t("home.howItWorks.steps3.title")}/>
+          
         </section>
       </div>
     </div>

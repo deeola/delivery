@@ -1,23 +1,29 @@
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
 import { useTranslation } from "react-i18next";
+import './Navbar.css'
 
 
 const NavLink = ({to, linkText}) => {
     const { t, i18n } = useTranslation();
+    console.log(i18n.language)
 
     const arFont = {
-      fontFamily : 'Cairo, sans-serif !important'
+      fontFamily : 'Cairo'
     }
+
+
+ 
 
   return (
    
       <Link
         to={to}
         className={'navigation-links'}
-        style={i18n.language === 'ar' ? arFont :{}}
+        style={i18n.language === 'ar' ? arFont : {}}
       >
-     {t(linkText)}
+      {t(linkText)}
+        
       </Link>
  
   );

@@ -42,11 +42,11 @@
  
     padding: 40px 20px;
     background-color: #fff;
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px, rgba(225, 225, 225, 0.639) 0px 20px, rgba(235, 235, 235, 0.492) 0px 40px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 10px,  rgba(235, 235, 235, 0.492) 0px 20px, rgba(239, 239, 239, 0.639) 0px 40px;
     border-radius: 8px;
     text-align: center;
     transition: transform 0.3s ease-in-out; 
-    width: 60%;
+    width: 80%;
    
   }
 
@@ -71,7 +71,7 @@
 
   .r-content{
     text-align:left;
-    font-size: 16px;
+    font-size: 23px;
   }
 
   .review-details-stars{

@@ -6,7 +6,7 @@
 
  .navbar {
   background-color: var(--ink);
-  font-family: var(--Poppins);
+  /* font-family: var(--Poppins); */
   position: fixed !important;
   width: 100%;
   top: 0;
@@ -62,7 +62,8 @@
   text-decoration: none;
   color: var(--white);
   cursor: pointer;
-  font-family: var(--Poppins);
+  font-family: 'Poppins'
+
 }
 
 .auth {

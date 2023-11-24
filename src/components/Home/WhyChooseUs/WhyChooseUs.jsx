@@ -16,10 +16,10 @@ export function WhyChooseUs() {
           </div>
 
           <div className="whychooseus-cards">
-            <WhyCard img={BusinessChart} alt="business chart" idx="0" />
-            <WhyCard img={Invest} alt="investment portfolio analysis" idx="1" />
-            <WhyCard img={Retire} alt="retirement planning" idx="2" />
-            <WhyCard img={Prof} alt="professional advisors" idx="3" />
+            <WhyCard title={t(`home.whyChoose.card1.title`)} content={t(`home.whyChoose.card1.content`)} img={BusinessChart} alt="business chart" idx="0" />
+            <WhyCard title={t(`home.whyChoose.card2.title`)} content={t(`home.whyChoose.card2.content`)} img={Invest} alt="investment portfolio analysis" idx="1" />
+            <WhyCard title={t(`home.whyChoose.card3.title`)} content={t(`home.whyChoose.card3.content`)} img={Retire} alt="retirement planning" idx="2" />
+            <WhyCard  title={t(`home.whyChoose.card4.title`)} content={t(`home.whyChoose.card4.content`)} img={Prof} alt="professional advisors" idx="3" />
           </div>
         </div>
       </div>
