@@ -33,99 +33,60 @@
   "reviewSlider.review2.content": "I had an incredibly positive experience working with Rise Advisory and Mr. Rahimi. With his assistance, I was able to create a robust plan that ensures a secure future by prioritizing saving and investing, all while maintaining my essential lifestyle needs.",
   "reviewSlider.review3.title": "Aafaq Zubair",
   "reviewSlider.review3.content": "I had an exceptional experience collaborating with Rise Advisory and Mr. Rahimi. Through their guidance, I was able to establish a robust financial strategy that emphasizes both savings and investments, all while maintaining a comfortable lifestyle. Their expertise ensured a secure future for me.",
-  "home": {
-    "hero": {
-      "heading": "Building You",
-      "heading-b": "A Future",
-      "content": "Take control of your own future with the help of completely unbiased professionals and make your own investment decisions towards freedom."
-    },
-    "whyChoose": {
-      "heading": "Why Choose Us",
-      "subheading": "Empowering Your Financial Success",
-      "cards": [
-        {
-          "title": "Personalized Financial Planning",
-          "content": "Our application offers robust financial planning tools that help you create customized plans tailored to your unique financial goals and circumstances."
-        },
-        {
-          "title": "Investment Portfolio Analysis",
-          "content": "Gain insights into your investment portfolio's performance and risk profile through our advanced analytics."
-        },
-        {
-          "title": "Retirement Planning",
-          "content": "Assess your current savings, estimate future expenses, and receive actionable recommendations to ensure a financially stable retirement."
-        },
-        {
-          "title": "Professional Advisors",
-          "content": "Professional advisors to monitor and guide you towards your goals"
-        }
-      ]
-    },
-    "advisors": {
-      "heading": "Advisors",
-      "subheading": "advisors will be available to support you",
-      "paragraph": "Client may request the counselor’s opinion on an investment the client is considering. The counselor will only summarize the opportunity for the client with regards to the features of the investment and what are the important things to consider for that specific investment opportunity."
-    },
-    "howItWorks": {
-      "heading": "How It Works",
-      "subheading": "Streamlining Your Financial Journey",
-      "content": "Discover how our Financial Consulting application simplifies complex financial processes, empowering you to make informed decisions with ease.",
-      "steps": [
-        {
-          "title": "Initial Consultation",
-          "content": "Schedule an initial consultation with our team of financial experts. During this session, we'll discuss your financial goals, challenges, and aspirations. This helps us understand your unique needs and create a tailored plan for your financial success."
-        },
-        {
-          "title": "Financial Analysis",
-          "content": "Our team conducts a comprehensive analysis of your financial situation. We review your income, expenses, investments, debts, and other relevant factors. This analysis allows us to identify areas where you can optimize your financial strategy and maximize your wealth potential."
-        },
-        {
-          "title": "Customized Financial Plan",
-          "content": "Based on our analysis, we develop a personalized financial plan that aligns with your goals and priorities. This plan includes specific recommendations on budgeting, saving, investing, debt management, retirement planning, and more. We ensure that our plan is realistic, achievable, and tailored to your unique circumstances."
-        }
-      ]
-    },
-    "download": {
-      "heading": "Get a Free estimate of your future wealth by downloading the App and registering."
-    },
-    "pricing": {
-      "heading": "Pricing Plans",
-      "subheading": "Tailored Solutions for Every Financial Need",
-      "plans": [
-        {
-          "title": "Basic",
-          "price": "$899",
-          "content": "The basic package is great if you are confident in monitoring yourself and do not need professional assistance to monitor and guide you in implementing your personal financial plan.",
-          "features": [
-            "Feature 1",
-            "Feature 2",
-            "Feature 3",
-            "Feature 4",
-            "Feature 5"
-          ],
-          "button": "SignUp Now"
-        },
-        {
-          "title": "Pro",
-          "price": "$1,299",
-          "content": "This will include everything in the basic package with the constant monitoring of your progress in implementing your personal financial plan by a professional advisor on a quarterly basis.",
-          "features": [
-            "Everything in the Basic Package",
-            "Feature 2",
-            "Feature 3",
-            "Feature 4",
-            "Feature 5"
-          ],
-          "button": "SignUp Now"
-        },
-        {
-          "title": "Premium",
-          "price": "$1,599",
-          "content": "The premium package includes everything in the pro package in addition to exclusive educational material and courses to help boost your future.",
-          "features": ["Feature 10", "Feature 11", "Feature 12", "Feature 13"],
-          "button": "SignUp Now"
-        }
-      ]
-    }
-  }
+  "home.hero.heading": "Building You",
+  "home.hero.heading-b": "A Future",
+  "home.hero.content": "Take control of your own future with the help of completely unbiased professionals and make your own investment decisions towards freedom.",
+  "home.whyChoose.heading": "Why Choose Us",
+  "home.whyChoose.subheading": "Empowering Your Financial Success",
+  "home.whyChoose.card1.title": "Personalized Financial Planning",
+  "home.whyChoose.card1.content": "Our application offers robust financial planning tools that help you create customized plans tailored to your unique financial goals and circumstances.",
+  "home.whyChoose.card2.title": "Investment Portfolio Analysis",
+  "home.whyChoose.card2.content": "Gain insights into your investment portfolio's performance and risk profile through our advanced analytics.",
+  "home.whyChoose.card3.title": "Retirement Planning",
+  "home.whyChoose.card3.content": "Assess your current savings, estimate future expenses, and receive actionable recommendations to ensure a financially stable retirement.",
+  "home.whyChoose.card4.title": "Professional Advisors",
+  "home.whyChoose.card4.content": "Professional advisors to monitor and guide you towards your goals",
+  "home.advisors.heading": "Advisors",
+  "home.advisors.subheading": "advisors will be available to support you",
+  "home.advisors.paragraph": "Client may request the counselor’s opinion on an investment the client is considering. The counselor will only summarize the opportunity for the client with regards to the features of the investment and what are the important things to consider for that specific investment opportunity.",
+  "home.howItWorks.heading": "How It Works",
+  "home.howItWorks.subheading": "Streamlining Your Financial Journey",
+  "home.howItWorks.content": "Discover how our Financial Consulting application simplifies complex financial processes, empowering you to make informed decisions with ease.",
+  "home.howItWorks.steps1.number": "1",
+  "home.howItWorks.steps1.title": "Initial Consultation",
+  "home.howItWorks.steps1.content": "Schedule an initial consultation with our team of financial experts. During this session, we'll discuss your financial goals, challenges, and aspirations. This helps us understand your unique needs and create a tailored plan for your financial success.",
+  "home.howItWorks.steps2.number": "2",
+  "home.howItWorks.steps2.title": "Financial Analysis",
+  "home.howItWorks.steps2.content": "Our team conducts a comprehensive analysis of your financial situation. We review your income, expenses, investments, debts, and other relevant factors. This analysis allows us to identify areas where you can optimize your financial strategy and maximize your wealth potential.",
+  "home.howItWorks.steps3.number": "3",
+  "home.howItWorks.steps3.title": "Customized Financial Plan",
+  "home.howItWorks.steps3.content": "Based on our analysis, we develop a personalized financial plan that aligns with your goals and priorities. This plan includes specific recommendations on budgeting, saving, investing, debt management, retirement planning, and more. We ensure that our plan is realistic, achievable, and tailored to your unique circumstances.",
+  "home.download.heading": "Get a Free estimate of your future wealth by downloading the App and registering.",
+  "home.pricing.heading": "Pricing Plans",
+  "home.pricing.subheading": "Tailored Solutions for Every Financial Need",
+  "home.pricing.plans1.title": "Basic",
+  "home.pricing.plans1.price": "$899",
+  "home.pricing.plans1.content": "The basic package is great if you are confident in monitoring yourself and do not need professional assistance to monitor and guide you in implementing your personal financial plan.",
+  "home.pricing.plans1.features1": "Feature 1",
+  "home.pricing.plans1.features2": "Feature 2",
+  "home.pricing.plans1.features3": "Feature 3",
+  "home.pricing.plans1.features4": "Feature 4",
+  "home.pricing.plans1.features5": "Feature 5",
+  "home.pricing.plans2.title": "Pro",
+  "home.pricing.plans2.price": "$1,299",
+  "home.pricing.plans2.content": "This will include everything in the basic package with the constant monitoring of your progress in implementing your personal financial plan by a professional advisor on a quarterly basis.",
+  "home.pricing.plans2.features1": "Everything in the Basic Package",
+  "home.pricing.plans2.features2": "Feature 2",
+  "home.pricing.plans2.features3": "Feature 3",
+  "home.pricing.plans2.features4": "Feature 4",
+  "home.pricing.plans2.features5": "Feature 5",
+  "home.pricing.plans3.title": "Premium",
+  "home.pricing.plans3.price": "$1,599",
+  "home.pricing.plans3.content": "The premium package includes everything in the pro package in addition to exclusive educational material and courses to help boost your future.",
+  "home.pricing.plans3.features1": "Feature 10",
+  "home.pricing.plans3.features2": "Feature 11",
+  "home.pricing.plans3.features3": "Feature 12",
+  "home.pricing.plans3.features4": "Feature 13",
+  "home.pricing.plans3.features5": "Feature 14",
+  "home.pricing.plans.button": "Sign-Up Now"
 }
