@@ -6,7 +6,7 @@ import "./FAQ.css"; // Import the CSS file for styling
 import { H2, H5 } from "../../Shared/Heading";
 
 const FAQ = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [activeIndex, setActiveIndex] = useState(null);
 
   const faqData = [
@@ -36,6 +36,11 @@ const FAQ = () => {
     setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
   };
 
+  const arFont={
+    fontFamily: 'Cairo'
+}
+
+
   return (
     <div className="containers">
       <div className="faq-cont">
@@ -50,7 +55,7 @@ const FAQ = () => {
                 className={`faq-item ${activeIndex === index ? "active" : ""}`}
                 onClick={() => handleClick(index)}
               >
-                <div className="question">
+                <div className="question" style={i18n.language === 'ar' ? arFont : {}}>
                   {item.question}
                   <FontAwesomeIcon
                     icon={activeIndex === index ? faChevronUp : faChevronDown}
@@ -58,7 +63,7 @@ const FAQ = () => {
                   />
                 </div>
                 {activeIndex === index && (
-                  <div className="answer">{item.answer}</div>
+                  <div className="answer" style={i18n.language === 'ar' ? arFont : {}} >{item.answer}</div>
                 )}
               </div>
             ))}

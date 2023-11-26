@@ -9,12 +9,19 @@ import {
 
 
 export default function Download(){
-const { t } = useTranslation();
+
+
+const { t, i18n } = useTranslation();
+
+  const arFont = {
+    fontFamily: 'Cairo'
+  }
+
   return (
     <div className="containers" id="download">
     <div className="download-container">
       <div className="downLeft">
-        <h2 className="downHeading">{t("home.download.heading")}</h2>
+        <h2 className="downHeading" style={i18n.language === 'ar' ? arFont : {}}>{t("home.download.heading")}</h2>
         <div className="imageContainer-2 downlinks">
           <img src={GooglePlay} alt="Google Play" className="imageLeft downimage" />
           <img src={AppStore} alt="App Store" className="imageLeft downimage" />

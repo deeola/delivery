@@ -44,6 +44,11 @@ const Slider = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const arFont={
+    fontFamily: 'Cairo'
+}
+
+
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % reviews.length);
   };
@@ -62,6 +67,9 @@ const Slider = () => {
     return () => clearInterval(interval);
   }, [reviews.length]);
 
+ 
+
+
   return (
     <div className="slider-container">
       <div className="testimonial">
@@ -76,7 +84,7 @@ const Slider = () => {
             <div className="review-details-stars">
             <div className="review-name-picture">
             <img className="r-img" src={reviews[currentIndex].img} style={i18n.language === 'ar' ? styles : {}} alt="img" />
-            <div className="r-name">{reviews[currentIndex].title}</div>
+            <div className="r-name" style={i18n.language === 'ar' ? arFont : {}}>{reviews[currentIndex].title}</div>
           </div>
           <div>
             <img src={stars} alt="stars" className="r-stars" />
@@ -84,7 +92,7 @@ const Slider = () => {
 
             </div>
           
-          <p className="r-content">{reviews[currentIndex].content}</p>
+          <p className="r-content" style={i18n.language === 'ar' ? arFont : {}}>{reviews[currentIndex].content}</p>
         </div>
         <button style={i18n.language === 'ar' ? rowReverse : {}} className="slider-button" onClick={handleNext}>
           <img  src={nextArrow} alt={t("reviewSlider.nextArrow")} />

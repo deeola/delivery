@@ -220,17 +220,34 @@
   }
 
   .social-icon-main-container{
-    width: 70%;
+    width: 50%;
+    margin-top: 25px;
+  
+    justify-content: space-between;
+    display: flex;
   }
 
   .socials-container{
     flex-direction: column;
+    
+
     width: 100%;
+ 
 
   }
 
+  .social-icons{
+   
+     display: flex;
+     justify-content: space-between;
+
+     width: 100%;
+  }
+
   .social-icon-link{
-    width: 100%;
+    width: 15%;
+    margin-left: 0px;
+    
   }
   
   

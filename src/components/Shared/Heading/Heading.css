@@ -92,3 +92,30 @@ line-height: 27px;
 
 
 }
+
+
+@media (max-width: 480px){
+
+    
+    
+
+    .text{
+        width: 96%;
+        font-size: 16px;
+    }
+
+    .text-heading{
+      
+    font-size: 19px;
+    
+    
+    font-weight: bold;
+    margin-bottom: 10px;
+  
+    
+    
+    
+    }
+
+
+}

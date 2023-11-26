@@ -15,6 +15,10 @@ import {
 const Footer = () => {
   const { t, i18n } = useTranslation();
 
+  const arFont={
+    fontFamily: 'Cairo'
+}
+
   return (
     <footer className="footer-container">
       <div className="containers">
@@ -34,7 +38,7 @@ const Footer = () => {
           <div className="socials-container">
            
          
-                <div className="footer-social-text">{t("footer.socials")}</div>
+                <div className="footer-social-text" style={i18n.language === 'ar' ? arFont : {}}>{t("footer.socials")}</div>
              
 
               <div className="social-icon-main-container">
@@ -81,10 +85,10 @@ const Footer = () => {
 
 
         <div className="footer-text">
-          <div className="left-text col-sm-6">{t("footer.rights")}</div>
+          <div className="left-text col-sm-6" style={i18n.language === 'ar' ? arFont : {}}>{t("footer.rights")}</div>
           <div className="right-text ">
-            <a href="/terms">{t("footer.terms")}</a>
-            <a href="/privacy">{t("footer.privacy")}</a>
+            <a href="/terms" style={i18n.language === 'ar' ? arFont : {}}>{t("footer.terms")}</a>
+            <a href="/privacy" style={i18n.language === 'ar' ? arFont : {}}>{t("footer.privacy")}</a>
           </div>
         </div>
 

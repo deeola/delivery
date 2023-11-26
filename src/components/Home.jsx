@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
-import ReviewSlider from "./Home/ReviewSlider/ReviewSlider";
-import FAQ from "./Home/FAQ/FAQ";
+import ReviewSlider from "../components/Home/ReviewSlider/ReviewSlider";
+import FAQ from "../components/Home/FAQ/FAQ";
 import Footer from "./Shared/Footer/Footer";
 import Hero from "./Home/Hero/Hero";
 import WhyChooseUs from "./Home/WhyChooseUs/WhyChooseUs";
@@ -28,7 +28,7 @@ fontFamily: 'Cairo !important'
        <Download/> 
        <Pricing /> 
       <div id="reviewSlider">
-        <ReviewSlider />
+        <ReviewSlider /> 
       </div> 
       <div id="faq">
         <FAQ />

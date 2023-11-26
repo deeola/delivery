@@ -162,6 +162,7 @@
 
   .card-container{
     width: 100%;
+    padding: 20px;
   }
 
 
@@ -169,6 +170,14 @@
     font-size: 24px;
     font-style: normal;
     padding-bottom: 16px;
+  }
+
+  .imgContainer{
+
+    padding: 15px;
+    width: 30%; 
+
+    border-radius: 7px;
   }
 
 }

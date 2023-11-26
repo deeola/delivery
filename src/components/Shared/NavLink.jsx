@@ -6,7 +6,7 @@ import './Navbar.css'
 
 const NavLink = ({to, linkText}) => {
     const { t, i18n } = useTranslation();
-    console.log(i18n.language)
+  
 
     const arFont = {
       fontFamily : 'Cairo'
