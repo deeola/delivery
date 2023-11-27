@@ -48,23 +48,41 @@ const Navbar = () => {
     //   return i18n.changeLanguage("en");
     // }
 
-    const currentLanguage = i18n.language;
-    const newLanguage = currentLanguage === 'en' ? 'ar' : 'en';
+    // const currentLanguage = i18n.language;
+    // const newLanguage = currentLanguage === 'en' ? 'ar' : 'en';
 
-    setMyVariable(newLanguage);
+    // setMyVariable(newLanguage);
     
   
-    // Update language state
-    setLanguage(newLanguage === 'en' ? 'ltr' : 'rtl');
+    // // Update language state
+    // setLanguage(newLanguage === 'en' ? 'ltr' : 'rtl');
   
-    // Update document direction
-    document.documentElement.setAttribute('dir', newLanguage === 'en' ? 'ltr' : 'rtl');
+    // // Update document direction
+    // document.documentElement.setAttribute('dir', newLanguage === 'en' ? 'ltr' : 'rtl');
   
 
    
     
-    // Update i18n language
-    i18n.changeLanguage(newLanguage);
+    // // Update i18n language
+    // i18n.changeLanguage(newLanguage);
+
+    const currentLanguage = i18n.language;
+    setLanguage((prevLanguage) => (prevLanguage === "ltr" ? "rtl" : "ltr"));
+    if (currentLanguage === "en") {
+      document.documentElement.setAttribute("dir", "rtl");
+
+      
+      setToggleState((prev) => !prev);
+      setMyVariable("ar");
+      return i18n.changeLanguage("ar");
+    } else {
+      document.documentElement.setAttribute("dir", "ltr");
+
+      setMyVariable("en");
+  
+
+      return i18n.changeLanguage("en");
+    }
   };
 
  

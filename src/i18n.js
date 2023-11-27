@@ -47,7 +47,7 @@ import i18n from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 
 import HttpApi from "i18next-http-backend";
-import Backend from 'i18next-sync-fs-backend';
+
 
 // const langs = "en" || "ar";
 
