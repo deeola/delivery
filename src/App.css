@@ -34,6 +34,9 @@
   --Poppins: "Poppins";
 }
 
+.cont-ainer{
+ position: relative;
+}
 
 .containers{
 /* background-color: saddlebrown; */
@@ -41,6 +44,11 @@ width: 90%;
 margin: auto;
 }
 
+.loading{
+  background-color: #062444;
+  width: 100vw;
+  height: 100vh;
+}
 
 
 /* .nav-link {
@@ -99,7 +107,7 @@ margin: auto;
 } */
 
 
-.navbar-toggler:focus {
+/* .navbar-toggler:focus {
   box-shadow: none !important;
 }
 body.navbar-open {
@@ -107,7 +115,7 @@ body.navbar-open {
   position: fixed;
   height: 100vh;
   width: 100%;
-}
+} */
 
 
 /* .hero {
@@ -200,12 +208,12 @@ body.navbar-open {
 
 /* Pricing Styling*/
 
-.price-card-container {
+/* .price-card-container {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
 
-}
+} */
 
 /* .pricecards {
   padding: 24px;
@@ -341,7 +349,7 @@ body.navbar-open {
 } */
 
 
-.cardHeading {
+/* .cardHeading {
   color: var(--ink);
   font-family: Poppins;
   font-size: 18px;
@@ -356,7 +364,7 @@ body.navbar-open {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
+} */
 
 /* #advisors {
   align-items: center;
@@ -364,23 +372,23 @@ body.navbar-open {
   height: auto;
 } */
 
-#how {
+/* #how {
   align-items: center;
   display: flex;
   height: auto;
   padding: 80px 0;
-}
+} */
 
 /* .price-cards {
   padding: 0 100px;
 } */
 
-.card {
+/* .card {
   border-radius: 9px;
   border: 1px solid #f5f5f5 !important;
   background: #fff;
   box-shadow: 0px 4px 16px 0px rgba(219, 219, 219, 0.08) !important;
-}
+} */
 /* #advisorsHeading {
   color: #00B795;
   font-family: Poppins;
@@ -429,9 +437,9 @@ body.navbar-open {
   line-height: 160%;
   padding-right: 100px;
 } */
-.numbered-section {
+/* .numbered-section {
   padding: 40px 0;
-}
+} */
 
 /* .content h3 {
   color: #000;
@@ -489,7 +497,7 @@ body.navbar-open {
   padding-top: 50px;
 } */
 
-.content {
+/* .content {
   margin-bottom: 30px;
   padding-left: 20px;
 }
@@ -503,7 +511,7 @@ body.navbar-open {
 .content p {
   font-size: 16px;
   line-height: 1.6;
-}
+} */
 
 /* #downHeading {
   color: #fff;
@@ -676,18 +684,19 @@ body.navbar-open {
   .price-cards {
     padding: 0;
   }
-  #willBe {
+  
+  /* #willBe {
     color: var(--ink);
     text-align: center;
     font-family: Benzin-Medium;
     font-size: 24px !important;
     font-style: normal;
     font-weight: 400;
-    line-height: 160%; /* 38.4px */
+    line-height: 160%; 
     text-transform: capitalize;
     padding-bottom: 22px;
     padding-top: 22px;
-  }
+  } */
   .card {
     height: auto !important;
     margin-bottom: 10px;
@@ -712,7 +721,7 @@ body.navbar-open {
   .login-des a {
     padding: 10px 20px !important;
   }
-  .nav-link,
+  /* .nav-link,
   .btn-link {
     color: #fff;
     font-family: Poppins;
@@ -720,7 +729,7 @@ body.navbar-open {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-  }
+  } */
   .btn-link {
     padding: 10% 0 !important;
   }
@@ -834,28 +843,11 @@ body.navbar-open {
   #howPara {
     padding-right: 0;
   } */
-  .content {
-    padding-left: 40px;
-  }
-  .content h3 {
-    color: #000;
-    font-family: "Poppins";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
+ 
   /* .imageContainer-2 {
     text-align: center;
   } */
-  .content p {
-    color: #495564;
-    font-family: "Poppins";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
+
   #downHeading {
     color: #fff;
     text-align: center;
@@ -981,7 +973,7 @@ body.navbar-open {
     font-size: 21px !important;
     font-style: normal;
     font-weight: 400;
-    line-height: 160%; /* 33.6px */
+    line-height: 160%; 
   }
   #faq {
     margin-top: 50px;
@@ -991,19 +983,19 @@ body.navbar-open {
     text-align: center !important;
     margin: auto;
   }
-  .social-icons {
+  /* .social-icons {
     text-align: center !important;
     justify-content: center !important;
-  }
-  .app-store {
+  } */
+  /* .app-store {
     text-align: center !important;
-  }
-  .play-store {
+  } */
+  /* .play-store {
     text-align: center !important;
     padding-top: 20px !important;
     margin-top: 20px !important;
     display: block;
-  }
+  } */
   .left-text {
     text-align: center;
     padding-bottom: 20px;
@@ -1033,9 +1025,9 @@ body.navbar-open {
     font-weight: 500 !important;
     line-height: normal;
   }
-  #navbarNav {
+  /* #navbarNav {
     margin-top: -2vh;
-  }
+  } */
   .navbar-toggler {
     position: absolute;
     right: 40px;

@@ -2,119 +2,141 @@ import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { close, open, logo, arLogo } from "../../assets/images";
-import { getMyVariable, setMyVariable, initializeI18n } from "../../i18n";
+import i18n   from "../../i18n";
 import NavLink from "./NavLink";
+
+
 
 import "./Navbar.css";
 
 const Navbar = () => {
+  // const navLeftRef = useRef(null);
+  // const logoRef = useRef(null);
+  // const { t, i18n } = useTranslation();
+  // const [language, setLanguage] = useState("ltr");
+  // const [menuOpen, setMenuOpen] = useState(false);
+  // const [toggleState, setToggleState] = useState(false);
+  // const [loading, setLoading] = useState(true);
+
+
+
+  // useEffect(() => {
+  //   // const initialize = async () => {
+  //   //   await initializeI18n();
+  //   //   setLoading(false);
+  //   // };
+  //   initializeI18n()
+   
+  //  },[language])
+
+
+  // // Toogle Language
+  // const ToggleLanguage = () => {
+  //   const currentLanguage = i18n.language;
+  //   setLanguage((prevLanguage) => (prevLanguage === "ltr" ? "rtl" : "ltr"));
+  //   if (currentLanguage === "en") {
+  //     document.documentElement.setAttribute("dir", "rtl");
+
+      
+  //     setToggleState((prev) => !prev);
+  //     setMyVariable("ar");
+  //     return i18n.changeLanguage("ar");
+  //   } else {
+  //     document.documentElement.setAttribute("dir", "ltr");
+
+  //     setMyVariable("en");
+  
+
+  //     return i18n.changeLanguage("en");
+  //   }
+
+  //   // const currentLanguage = i18n.language;
+  //   // const newLanguage = currentLanguage === 'en' ? 'ar' : 'en';
+
+  //   // setMyVariable(newLanguage);
+    
+  
+  //   // // Update language state
+  //   // setLanguage(newLanguage === 'en' ? 'ltr' : 'rtl');
+  
+  //   // // Update document direction
+  //   // document.documentElement.setAttribute('dir', newLanguage === 'en' ? 'ltr' : 'rtl');
+  
+    
+  //   // // Update i18n language
+  //   // i18n.changeLanguage(newLanguage);
+  // };
+
+
+
+
+
   const navLeftRef = useRef(null);
-  const logoRef = useRef(null);
-  const { t, i18n } = useTranslation();
+  const logoRef = useRef(null)
+  const { t, i18n : myI18n } = useTranslation();
   const [language, setLanguage] = useState("ltr");
   const [menuOpen, setMenuOpen] = useState(false);
-  const [toggleState, setToggleState] = useState(false);
-  const [loading, setLoading] = useState(true);
+  // const { languages, changeLanguage } = useLanguage();
+
+  // console.log(languages)
 
 
 
-  useEffect(() => {
-    // const initialize = async () => {
-    //   await initializeI18n();
-    //   setLoading(false);
-    // };
-    initializeI18n()
-   
-  },[language])
+  
 
 
   // Toogle Language
-  const ToggleLanguage = () => {
-    // const currentLanguage = i18n.language;
-    // setLanguage((prevLanguage) => (prevLanguage === "ltr" ? "rtl" : "ltr"));
-    // if (currentLanguage === "en") {
-    //   document.documentElement.setAttribute("dir", "rtl");
-
-      
-    //   setToggleState((prev) => !prev);
-    //   setMyVariable("ar");
-    //   return i18n.changeLanguage("ar");
-    // } else {
-    //   document.documentElement.setAttribute("dir", "ltr");
-
-    //   setMyVariable("en");
-  
-
-    //   return i18n.changeLanguage("en");
-    // }
-
-    // const currentLanguage = i18n.language;
-    // const newLanguage = currentLanguage === 'en' ? 'ar' : 'en';
-
-    // setMyVariable(newLanguage);
-    
-  
-    // // Update language state
-    // setLanguage(newLanguage === 'en' ? 'ltr' : 'rtl');
-  
-    // // Update document direction
-    // document.documentElement.setAttribute('dir', newLanguage === 'en' ? 'ltr' : 'rtl');
-  
-
-   
-    
-    // // Update i18n language
-    // i18n.changeLanguage(newLanguage);
-
-    const currentLanguage = i18n.language;
+  const toggleLanguage = () => {
+    const currentLanguage = myI18n.language;
     setLanguage((prevLanguage) => (prevLanguage === "ltr" ? "rtl" : "ltr"));
     if (currentLanguage === "en") {
       document.documentElement.setAttribute("dir", "rtl");
+      // changeLanguage('ar');
 
-      
-      setToggleState((prev) => !prev);
-      setMyVariable("ar");
-      return i18n.changeLanguage("ar");
+      return myI18n.changeLanguage("ar");
     } else {
       document.documentElement.setAttribute("dir", "ltr");
+      // changeLanguage('en');
 
-      setMyVariable("en");
-  
 
-      return i18n.changeLanguage("en");
+
+      return myI18n.changeLanguage("en");
     }
   };
 
- 
-
-  // Toogle Menu
+// Toogle Menu
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
     const navLeftElement = navLeftRef.current;
-    const logoRefElement = logoRef.current;
+    const logoRefElement = logoRef.current
 
     if (!menuOpen) {
-      navLeftElement.style.display = "flex";
-      logoRefElement.style.display = "none";
+
+      navLeftElement.style.display = 'flex';
+      logoRefElement .style.display = 'none';
     } else {
-      navLeftElement.style.display = "none";
-      logoRefElement.style.display = "flex";
-    }
+      navLeftElement.style.display = 'none';
+      logoRefElement .style.display = 'flex';
+    } 
   };
 
-  const hamStyles = {
-    width: "100%",
-    direction: "ltr",
-  };
+  const hamStyles  = {
+    width: '100%',
+    direction: 'ltr'
 
-  const hamStylesEn = {
-    width: "100%",
-    direction: "rtl",
-  };
+  }
+
+
+  const hamStylesEn  = {
+    width: '100%',
+    direction: 'rtl'
+
+  }
 
   const arFont = {
-    fontFamily: "Cairo",
-  };
+    fontFamily : 'Cairo'
+  }
+
 
   return (
     <nav
@@ -142,7 +164,7 @@ const Navbar = () => {
               className="hamburger"
               style={i18n.language === "ar" ? hamStyles : hamStylesEn}
             >
-              <div>
+              <div className="hihi">
                 {menuOpen ? (
                   <img src={close} alt="close" onClick={toggleMenu} />
                 ) : (
@@ -153,7 +175,7 @@ const Navbar = () => {
 
             <div
               className="language desktop-language navbar-open"
-              onClick={ToggleLanguage}
+              onClick={toggleLanguage}
               style={i18n.language === "ar" ? arFont : {}}
             >
               {t("navbar.arabic")}
@@ -170,7 +192,7 @@ const Navbar = () => {
 
             <div
               className="langaue mobile-language"
-              onClick={ToggleLanguage}
+              onClick={toggleLanguage}
               style={i18n.language === "ar" ? arFont : {}}
             >
               {t("navbar.arabic")}

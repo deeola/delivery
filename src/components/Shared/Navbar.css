@@ -58,6 +58,16 @@
   width: 61%;
 }
 
+/* .ltr{
+  background-color: aliceblue;
+}
+
+.rtl{
+  background-color: rgb(50, 111, 165);
+} */
+
+
+
 .navigation-links {
   text-decoration: none;
   color: var(--white);

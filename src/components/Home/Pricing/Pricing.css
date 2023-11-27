@@ -143,3 +143,58 @@
     /* display: none; */
   }
 }
+
+
+@media (max-width: 480px){
+  .planHeading {
+    color: var(--ink);
+    font-family: "Benzin-Regular";
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+  }
+  
+  .planPrice {
+    color: var(--ink);
+    font-family: Benzin-Regular;
+    font-size: 1.8em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    padding: 10px 0px;
+  }
+  
+  .planPara {
+
+    text-align:center;
+
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: unset;
+    margin: 10px 0px;
+  }
+
+  .pricing-container {
+    padding: 100px 0px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .priceCardSignupBtn {
+    padding: 10px 20px;
+    align-items: center;
+
+    width: 140px;
+    font-size: 12px;
+    align-self: center;
+  }
+
+  .price-card {
+   
+   padding: 20px 15px;
+  }
+}
