@@ -7,13 +7,26 @@ const HowItWorksCards = ({text, textheading, number, numberLines}) => {
 
     const styles = {
 
-        marginLeft: "30px"
+        marginLeft: "30px",
+        alignItems : 'center'
+        
       }
     
       const numberLine = {
       
-        marginTop: "70px"
+        marginTop: "30px",
+        left: '0px'
       }
+
+
+    //   position: relative;
+    //   width: 2px;
+    //   height: 100px;
+    //   margin-top: 30px;
+    //   background: #00b795;
+    //   left: 23px;
+    //   top: 0;
+    //   z-index: 1;
 
 
   return (

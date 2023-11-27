@@ -154,7 +154,7 @@ const Navbar = () => {
               <Link className="logo-link" to="/">
                 <img
                   className="logo-link-image"
-                  src={language === "ltr" ? logo : arLogo}
+                  src={i18n.language === "ar"  ? arLogo : logo}
                   alt="logo"
                 />
               </Link>

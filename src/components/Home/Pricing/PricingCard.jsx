@@ -33,7 +33,7 @@ const PricingCard = ({ index, title, price, content, features, button }) => {
               className="arrow-check"
             />
 
-            <span className="feat">{feature}</span>
+            <span className="feat" style={i18n.language === 'ar' ? arFont : {}}>{feature}</span>
           </div>
         ))}
       </div>
