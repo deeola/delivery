@@ -6,7 +6,7 @@ const HowItWorksCards = ({text, textheading, number, numberLines}) => {
     const { i18n } = useTranslation();
 
     const styles = {
-        flexDirection: "unset",
+
         marginLeft: "30px"
       }
     
