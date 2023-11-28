@@ -19,6 +19,7 @@
   display: flex;
   justify-content: space-between;
   /* align-items: center; */
+
 }
 
 .menu-links {
@@ -26,28 +27,31 @@
 }
 
 .hero-left {
-  width: 60%;
-  padding-top: 150px;
+  width: 50%;
+  padding-top: 100px;
 }
 
 .heroImage {
   /* width: 50%; */
 
-  width: 35%;
+  width: 55%;
   display: flex;
   justify-content: center;
   align-items: center;
+
+
 }
 
 .hero-img {
-  max-width: 100%;
+   max-width: 100%; 
   height: auto;
+
 }
 
 .heroH1 {
   color: var(--white);
   font-family: "Benzin-regular";
-  font-size: 5rem;
+  font-size: 64px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -59,8 +63,8 @@
 .heroPara {
   width: 100%;
   color:  var(--skyBlue);
-  font-family: Poppins;
-  font-size: 1.33rem;
+  font-family: 'Poppins';
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 160%; 
@@ -155,8 +159,8 @@
   .heroPara {
     width: 80%;
     margin: auto;
-    font-family: Poppins;
-    font-size: 1rem;
+    font-family: 'Poppins';
+    font-size: 16px;
     text-align: center;
     font-style: normal;
     font-weight: 400;
@@ -203,11 +207,11 @@
 
   .heroH1 {
 
-    font-size: 32px;
+    font-size: 32px ;
   }
 
   .heroPara {
-    font-size: 15px;
+
     width: 100%;
     margin: 20px 0px;
   }

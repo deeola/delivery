@@ -6,13 +6,18 @@ export function Hero() {
   const { t, i18n } = useTranslation();
 
   const arFont = {
-    fontFamily: 'Cairo'
+    fontFamily: 'Cairo',
+    fontSize: window.innerWidth >= 480 ? '16px' : '14px',
   }
+
+  console.log(window.innerWidth)
 
   const arFontFamily ={
     fontFamily: 'Cairo',
-    fontSize: '64px',
+    fontSize: window.innerWidth >= 480 ? '64px' : '40px',
     fontWeight: '700'   
+
+
   }
 
   return (

@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { Text, TextHeading } from "../../Shared/Heading/Heading";
+import { Text, WhyTextHeading } from "../../Shared/Heading/Heading";
 import "./WhyChooseUs.css";
 
 const WhyCard = ({ img, alt, title, content }) => {
@@ -9,7 +9,7 @@ const WhyCard = ({ img, alt, title, content }) => {
       <div className="imgContainer">
         <img className="cardImg" src={img} alt={alt} />
       </div>
-      <TextHeading text={title} />
+      <WhyTextHeading text={title} />
       <Text text={content}  />
     </div>
   );

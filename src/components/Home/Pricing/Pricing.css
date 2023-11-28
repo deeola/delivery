@@ -31,7 +31,7 @@
 .planHeading {
   color: var(--ink);
   font-family: "Benzin-Regular";
-  font-size: 1.6em;
+  font-size: 21px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -40,24 +40,35 @@
 
 .planPrice {
   color: var(--ink);
-  font-family: Benzin-Regular;
-  font-size: 2.7em;
+  font-family: 'Benzin-Regular';
+  font-size: 42px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-align: center;
   padding: 20px 0px;
+
+
 }
 
 .planPara {
   color: #495564;
   text-align: center;
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
-  margin: 20px auto;
+
+}
+
+.feat {
+  color: #495564;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .arrows {
@@ -92,15 +103,22 @@
 }
 
 .priceCardSignupBtn {
-  padding: 14px 24px;
+
   align-items: center;
-  border-radius: 33px;
+
   background: #00b795;
   color: #fff;
-  text-align: center;
-  width: 170px;
-  font-size: 1em;
+
   align-self: center;
+
+
+  width:145px;
+/* height: 40px; */
+padding: 8px 24px;
+border-radius: 33px;
+font-size: 16px;
+/* gap: 6px */
+
 }
 
 .box {
@@ -149,7 +167,6 @@
   .planHeading {
     color: var(--ink);
     font-family: "Benzin-Regular";
-    font-size: 1.5em;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -159,7 +176,6 @@
   .planPrice {
     color: var(--ink);
     font-family: Benzin-Regular;
-    font-size: 1.8em;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -171,7 +187,7 @@
 
     text-align:center;
 
-    font-size: 13px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: unset;

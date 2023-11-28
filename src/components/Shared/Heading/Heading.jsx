@@ -9,7 +9,8 @@ const arFont={
 
 const arH2 = {
     fontFamily: 'Cairo',
-    fontWeight: '700'
+    fontWeight: '700',
+    // fontSize: '32px'
 }
 
 const arTextHeading = {
@@ -56,3 +57,20 @@ export const TextHeading = ({text, centered}) => {
         <h4 className={`text-heading ${centered ? 'centered' : ''}`} style={i18n.language === 'ar' ? arTextHeading  : {}}>{text}</h4>
     )
 }
+
+
+export const WhyTextHeading = ({text, centered}) => {
+    const {i18n} = useTranslation()
+    return (
+        <h4 className={`whytext-heading ${centered ? 'centered' : ''}`} style={i18n.language === 'ar' ? arTextHeading  : {}}>{text}</h4>
+    )
+}
+
+
+export const PriceText= ({text, centered}) => {
+    const {i18n} = useTranslation()
+    return (
+        <h4 className={`pricetext ${centered ? 'centered' : ''}`} style={i18n.language === 'ar' ? arTextHeading  : {}}>{text}</h4>
+    )
+}
+

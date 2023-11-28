@@ -25,12 +25,19 @@
 .downHeading {
   color: #fff;
   font-family: "Benzin-Medium";
-  font-size: 34px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 400;
   width: 100%;
   line-height: 60px;
    margin-bottom: 30px; 
+/* 
+   font-family: Benzin-Medium;
+font-size: 32px;
+line-height: 51px;
+letter-spacing: 0em;
+text-align: left; */
+
 } 
 
 .downLeft {
@@ -153,7 +160,7 @@
 
 @media (max-width: 480px) {
   .downHeading {
-    font-size: 16px;
+    font-size: 21px;
 
 
     /* padding-bottom: 24px; */

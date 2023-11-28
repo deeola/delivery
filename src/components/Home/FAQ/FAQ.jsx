@@ -40,6 +40,11 @@ const FAQ = () => {
     fontFamily: 'Cairo'
 }
 
+const questionArFont={
+  fontFamily: 'Cairo',
+  fontSize: '18px'
+}
+
 
   return (
     <div className="containers">
@@ -55,7 +60,7 @@ const FAQ = () => {
                 className={`faq-item ${activeIndex === index ? "active" : ""}`}
                 onClick={() => handleClick(index)}
               >
-                <div className="question" style={i18n.language === 'ar' ? arFont : {}}>
+                <div className="question" style={i18n.language === 'ar' ? questionArFont : {}}>
                   {item.question}
                   <FontAwesomeIcon
                     icon={activeIndex === index ? faChevronUp : faChevronDown}
