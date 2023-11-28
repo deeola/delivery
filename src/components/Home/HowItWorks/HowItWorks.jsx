@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import { H2, H5, HeadingText } from "../../Shared/Heading";
-import { Text, TextHeading } from "../../Shared/Heading/Heading";
 import "./HowItWorks.css";
 import HowItWorksCards from "./HowItWorksCards";
 

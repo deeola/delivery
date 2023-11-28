@@ -8,17 +8,17 @@
   z-index: 0;
   position: relative;
   border-radius: 16px;
-  padding: 100px 0px 0px 0px;
+  padding: 100px 30px 0px 30px;
   /* padding-left: 106px;
     padding-right: 106px; */
 }
 
 .download-container {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 89%;
-  margin: auto;
+  /* align-items: center; */
+  justify-content: space-between;
+  width: 85%;
+  margin: 0px auto; 
 
 }
 
@@ -31,22 +31,18 @@
   width: 100%;
   line-height: 60px;
    margin-bottom: 30px; 
-/* 
-   font-family: Benzin-Medium;
-font-size: 32px;
-line-height: 51px;
-letter-spacing: 0em;
-text-align: left; */
+
 
 } 
 
 .downLeft {
-  width: 50%;
-  padding-top: 30px;
+  width: 54%;
+ 
+ padding-top: 70px; 
 }
 
 .downRight {
-  width: 30%;
+  width: 35%;
 }
 
 .downIphoneImage {
@@ -57,13 +53,13 @@ text-align: left; */
 .downlinks {
   display: flex;
   /* flex-direction: column; */
-  width: 100%;
+  width: 80%;
 
   /* justify-content: space-between; */
 }
 
 .downimage {
-  margin-bottom: 20px;
+
   width: 30%;
   margin-right: 20px;
 }
@@ -165,4 +161,23 @@ text-align: left; */
 
     /* padding-bottom: 24px; */
   }
+
+  .download-container {
+
+    width: 100%;
+    margin: 0px auto; 
+  
+  }
+
+  .downimage {
+
+    margin-bottom: 20px;
+  }
+
+  .downRight {
+
+    margin-top: 0px;
+
+  }
+  
 }

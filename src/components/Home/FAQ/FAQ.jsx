@@ -37,12 +37,14 @@ const FAQ = () => {
   };
 
   const arFont={
-    fontFamily: 'Cairo'
+    fontFamily: 'Cairo',
+    textAlign: 'right'
 }
 
 const questionArFont={
   fontFamily: 'Cairo',
-  fontSize: '18px'
+  fontSize: '18px',
+  textAlign: 'right'
 }
 
 

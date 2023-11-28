@@ -48,6 +48,11 @@ const Slider = () => {
     fontFamily: 'Cairo'
 }
 
+const arFonts={
+  fontFamily: 'Cairo',
+  textAlign: 'right'
+}
+
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % reviews.length);
@@ -92,7 +97,7 @@ const Slider = () => {
 
             </div>
           
-          <p className="r-content" style={i18n.language === 'ar' ? arFont : {}}>{reviews[currentIndex].content}</p>
+          <p className="r-content" style={i18n.language === 'ar' ? arFonts : {}}>{reviews[currentIndex].content}</p>
         </div>
         <button style={i18n.language === 'ar' ? rowReverse : {}} className="slider-button" onClick={handleNext}>
           <img  src={nextArrow} alt={t("reviewSlider.nextArrow")} />

@@ -15,7 +15,8 @@ const arH2 = {
 
 const arTextHeading = {
     fontFamily: 'Cairo',
-    fontWeight: '500'
+    fontWeight: '700',
+    textAlign: 'right'
 }
 
 export const H5 = ({text, centered}) => {

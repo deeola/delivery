@@ -19,14 +19,19 @@ const HowItWorksCards = ({text, textheading, number, numberLines}) => {
       }
 
 
-    //   position: relative;
-    //   width: 2px;
-    //   height: 100px;
-    //   margin-top: 30px;
-    //   background: #00b795;
-    //   left: 23px;
-    //   top: 0;
-    //   z-index: 1;
+    //   .text-heading {
+
+
+    //     font-family: 'Poppins';
+    //   font-size: 16px;
+    //   font-weight: 500;
+    //   line-height: 24px;
+    //   letter-spacing: 0em;
+    //   text-align: left;
+      
+      
+    //     /* margin:25px 0px; */
+    //   }
 
 
   return (
